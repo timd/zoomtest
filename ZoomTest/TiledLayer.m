@@ -74,7 +74,7 @@
     NSString *tilename = [NSString stringWithFormat:@"1930-%d-%d-%d", scaleFactor, col+1, row+1];
     NSLog(@"Tilename = %@", tilename);
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:tilename ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:tilename ofType:@"png" inDirectory:@"1930pngs"];
     
     NSLog(@"Path = %@", path);
     
